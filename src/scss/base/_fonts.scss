@@ -1,0 +1,83 @@
+$header-font: "Raleway", Arial, sans-serif;
+$text-font: "Raleway", "Source Sans Pro", sans-serif;
+
+/* Copy */
+$text-size: $baseline * 4;
+$text-weight: normal;
+$text-line-height: $baseline * 7.5;
+
+/* Headers */
+/* H1 */
+$h1-size: $baseline * 18;
+$h1-weight: 900;
+$h1-line-height: 1em;
+
+/* H2 */
+$h2-size: $baseline * 8;
+$h2-weight: 700;
+$h2-line-height: 1em;
+
+/* H3 */
+$h3-size: $baseline * 5;
+$h3-weight: 700;
+$h3-line-height: 1em;
+
+body,
+div,
+span,
+p,
+.p {
+  font-family: $text-font;
+  font-size: $text-size;
+  font-weight: $text-weight;
+  line-height: $text-line-height;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: $header-font;
+}
+
+h1,
+.h1 {
+  font-size: $h1-size;
+  font-weight: $h1-weight;
+  line-height: $h1-line-height;
+
+  @include small() {
+    font-size: $baseline * 14;
+  }
+}
+
+h2,
+.h2 {
+  font-size: $h2-size;
+  font-weight: $h2-weight;
+  line-height: $h2-line-height;
+
+  @include small() {
+    font-size: $baseline * 6;
+  }
+}
+
+h3,
+.h3 {
+  font-size: $h3-size;
+  font-weight: $h3-weight;
+  line-height: $h3-line-height;
+
+  @include small() {
+    font-size: $baseline * 4;
+  }
+}
+

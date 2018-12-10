@@ -1,0 +1,26 @@
+.footer {
+  @include atXSmall;
+  @include atSmall;
+  @include atMedium;
+  @include atLarge;
+  @include flex;
+  @include flex-space-between;
+  @include primary-theme-inverse;
+
+  &__section {
+    @include flex;
+    min-height: 80px;
+  }
+}
+
+.footer {
+  @include medium {
+    padding: $baseline * 10;
+    @include flex-column;
+    @include flex-center;
+    &__section {
+      @include flex-column;
+      @include flex-center;
+    }
+  }
+}

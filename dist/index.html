@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <title>Document</title>
+</head>
+<body>
+  <main> 
+    <!-- Header -->
+    <header class="header">
+      <!-- Notification Bar -->
+      <div class="header__notification-bar">
+        <a href="">New Release! Check out the new episode of Series Title</a>
+      </div>
+
+      <!-- Header Navigation Menu -->
+      <nav class="nav">
+        <a class="nav__logo logo-lpad" href=""><h1>V</h1></a>
+        <ul class="nav__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Page Banner / Hero -->
+    <section class="page-banner">
+      <h1 class="page-banner__title">Video Log</h1>
+    </section>
+
+    <!-- Newest Additions -->
+    <section class="newest-additions">
+      <header class="newest-additions__header">
+        <h2 class="newest-additions__title">Newest Additions</h2>
+        <a class="newest-additions__more"href="#">View More New Content</a>
+      </header>
+      <ul class="newest-additions__list">
+        <li>
+          <img src="https://via.placeholder.com/200x300" alt="media cover">
+          <h3 class="newest-additions__list-title">Movie Title</h3>
+          <p class="newest-additions__list-director">Director: Name</p>
+          <p class="newest-additions__list-starring">Starring: Name, Name</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/200x300" alt="media cover">
+          <h3 class="newest-additions__list-title">Movie Title</h3>
+          <p class="newest-additions__list-director">Director: Name</p>
+          <p class="newest-additions__list-starring">Starring: Name, Name</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/200x300" alt="media cover">
+          <h3 class="newest-additions__list-title">Movie Title</h3>
+          <p class="newest-additions__list-director">Director: Name</p>
+          <p class="newest-additions__list-starring">Starring: Name, Name</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/200x300" alt="media cover">
+          <h3 class="newest-additions__list-title">Movie Title</h3>
+          <p class="newest-additions__list-director">Director: Name</p>
+          <p class="newest-additions__list-starring">Starring: Name, Name</p>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/200x300" alt="media cover">
+          <h3 class="newest-additions__list-title">Movie Title</h3>
+          <p class="newest-additions__list-director">Director: Name</p>
+          <p class="newest-additions__list-starring">Starring: Name, Name</p>
+        </li>
+      </ul>
+    </section>
+    
+    <!-- Featured Content -->
+    <section class="featured-section">
+      <button class="featured-section__button"><i class="fas fa-angle-left"></i></button>
+      <div class="slider">
+        <div class="featured-section__slide">
+          <div class="featured-section__content">
+            <img src="https://via.placeholder.com/250x250" alt="cover image">
+            <div class="text-width">
+              <h2 class="featured-section__title">Featured Content Title</h2>
+              <h3 class="featured-section__subtitle">Series Title</h3>
+              <p>Newest Episode: #34, Episode Title</p>
+              <p>Summary: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempora cumque. Corrupti eaque quaerat numquam excepturi consectetur inventore dolores. Dolore doloremque dolor necessitatibus nihil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="featured-section__button"><i class="fas fa-angle-right"></i></button>
+    </section>
+
+    <!-- Contact Video Log -->
+    <section class="contact-section">
+      <form class="contact-section__form" action="submit">
+        <h2 class="contact-section__title">Contact Video Log</h2>
+        <p class="contact-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt asperiores, voluptates ipsam ipsum dolores? Natus a, ex numquam saepe doloribus iste. Voluptatem, praesentium minus! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet sit amet.</p>
+
+        <label for="firstName" class="visuallyhidden">First Name</label>
+        <input name="firstName" type="text" placeholder="First Name" required>
+
+        <label for="lastName" class="visuallyhidden">Last Name</label>
+        <input name="lastName" type="text" placeholder="Last Name" required>
+        
+        <label for="email" class="visuallyhidden">Email</label>
+        <input name="email" type="text" placeholder="Email" required>
+
+        <label for="phoneNumber" class="visuallyhidden">Phone</label>
+        <input name="phoneNumber" type="tel" placeholder="Phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+        <label for="message"></label>
+        <textarea name="message" cols="30" rows="10" placeholder="Enter message here..."></textarea>
+
+        <p class="contact-section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nesciunt nam inventore fuga ut corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur?</p>
+
+        <div class="contact-section__submit"><input type="submit" value="Submit"></div>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__section">
+        <a class="nav__logo" href=""><h1>V</h1></a>
+        <nav class="nav">
+            <ul class="nav__menu">
+              <li><a href="#">Terms Of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </nav>
+      </div>
+      <div class="footer__section">
+        <nav class="nav">
+            <ul class="nav__menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">TV Shows</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+      </div>
+    </footer>
+  </main> 
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+  // $(document).ready(function(){
+  //   $('.slider').slick({
+      
+  //   });
+  // });
+</script>
+</html>

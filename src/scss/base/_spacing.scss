@@ -1,0 +1,62 @@
+$baseline: 4px;
+$default-space: $baseline * 2;
+$header-space: $baseline * 4;
+$paragraph-space: $baseline * 2;
+
+$xsmall-pad-x: $baseline * 2;
+$xsmall-pad-y: $baseline * 2;
+
+$small-pad-x: $baseline * 5;
+$small-pad-y: $baseline * 3;
+
+$medium-pad-x: $baseline * 8;
+$medium-pad-y: $baseline * 3;
+
+$large-pad-x: $baseline * 11;
+$large-pad-y: $baseline * 3;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-bottom: $header-space;
+}
+
+p {
+  padding-bottom: $paragraph-space;
+  padding-top: $paragraph-space;
+}
+
+.page-width {
+  max-width: 850px;
+}
+
+.text-width {
+  max-width: 550px;
+}
+
+@mixin atXSmall {
+  @media (min-width: 0px) {
+    padding: $xsmall-pad-y $xsmall-pad-x;
+  }
+}
+
+@mixin atSmall {
+  @media (min-width: 530px) {
+    padding: $small-pad-y $small-pad-x;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: 800px) {
+    padding: $medium-pad-y $medium-pad-x;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: 1200px) {
+    padding: $large-pad-y $large-pad-x;
+  }
+}

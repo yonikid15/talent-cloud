@@ -1,0 +1,89 @@
+$default: #1d1d1d;
+$default-inverse: #bbbbbb;
+
+$primary: white;
+$primary-inverse: #616161;
+
+$secondary: white;
+$secondary-inverse: #494949;
+
+// Default color
+@mixin color-default {
+  color: $default;
+}
+
+@mixin color-inverse-default {
+  color: $default-inverse;
+}
+
+@mixin background-default {
+  background-color: $default;
+}
+
+@mixin background-inverse-default {
+  background-color: $default-inverse;
+}
+
+@mixin default-theme {
+  background-color: $default;
+  color: $default-inverse;
+}
+
+@mixin default-theme-inverse {
+  background-color: $default-inverse;
+  color: $default;
+}
+
+// Primary Color
+@mixin color-primary {
+  color: $primary;
+}
+
+@mixin color-inverse-primary {
+  color: $primary-inverse;
+}
+
+@mixin background-primary {
+  background-color: $primary;
+}
+
+@mixin background-inverse-primary {
+  background-color: $primary-inverse;
+}
+
+@mixin primary-theme {
+  background-color: $primary;
+  color: $primary-inverse;
+}
+
+@mixin primary-theme-inverse {
+  background-color: $primary-inverse;
+  color: $primary;
+}
+
+// secondary Color
+@mixin color-secondary {
+  color: $secondary;
+}
+
+@mixin color-inverse-secondary {
+  color: $secondary-inverse;
+}
+
+@mixin background-secondary {
+  background-color: $secondary;
+}
+
+@mixin background-inverse-secondary {
+  background-color: $secondary-inverse;
+}
+
+@mixin secondary-theme {
+  background-color: $secondary;
+  color: $secondary-inverse;
+}
+
+@mixin secondary-theme-inverse {
+  background-color: $secondary-inverse;
+  color: $secondary;
+}

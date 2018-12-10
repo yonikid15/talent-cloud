@@ -1,0 +1,51 @@
+.contact-section{
+  @include atXSmall;
+  @include atSmall;
+  @include atMedium;
+  @include atLarge;
+  @include flex;
+  @include flex-center;
+  @include flex-cross-center;
+
+  &__form {
+    @include flex;
+    @include flex-wrap;
+    width: 700px;
+    h2 {
+      margin-left: 20px;
+      margin-bottom: 0;
+    }
+    
+    p {
+      margin-bottom: 1rem;
+      margin: $baseline * 2;
+    }
+
+    input[type=text], input[type=tel] {
+      @include flex-item( 1 1 39%);
+      padding: $baseline * 5;
+      margin: $baseline * 2;
+    }
+
+    textarea {
+      @include flex-item( 1 1 100%);
+      padding: $baseline * 5;
+      margin: $baseline * 2;
+    }
+
+    input[type=submit] {
+      padding: $baseline * 4 $baseline * 8;
+      margin: $baseline * 2;
+      @include background-inverse-default;
+      border: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__submit {
+    @include flex;
+    @include flex-center;
+    @include flex-cross-center;
+    width: 100%;
+  }
+}

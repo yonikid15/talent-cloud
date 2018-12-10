@@ -1,0 +1,96 @@
+// Flex
+
+@mixin flex {
+  display: flex;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-start {
+  justify-content: flex-start;
+}
+
+@mixin flex-end {
+  justify-content: flex-end;
+}
+
+@mixin flex-stretch {
+  justify-content: stretch;
+}
+
+@mixin flex-center {
+  justify-content: center;
+}
+
+@mixin flex-space-around {
+  justify-content: space-around;
+}
+
+@mixin flex-space-between {
+  justify-content: space-between;
+}
+
+@mixin flex-space-evenly {
+  justify-content: space-evenly;
+}
+
+@mixin flex-cross-start {
+  align-items: flex-start;
+}
+
+@mixin flex-cross-end {
+  align-items: flex-end;
+}
+
+@mixin flex-cross-center {
+  align-items: center;
+}
+
+@mixin flex-cross-stretch {
+  align-items: stretch;
+}
+
+@mixin flex-wrap {
+  flex-wrap: wrap;
+}
+
+@mixin flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+@mixin flex-item-even {
+  flex: 1 1;
+}
+
+@mixin flex-item-none {
+  flex: none;
+}
+
+/* FLEX ITEMS */
+
+@mixin flex-basis-100 {
+  flex-basis: 100%;
+}
+
+@mixin flex-basis-50 {
+  flex-basis: 45.9%;
+}
+
+@mixin flex-basis-30 {
+  flex-basis: 33.3333%;
+}
+
+@mixin flex-item($values...) {    
+  @each $var in $values {
+    flex: #{$var};
+  }
+}
+

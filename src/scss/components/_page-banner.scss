@@ -1,0 +1,12 @@
+.page-banner {
+  @include secondary-theme-inverse;
+  @include flex;
+  @include flex-center;
+  @include flex-cross-center;
+  height: 300px;
+  
+  &__title {
+    
+    font-weight: 900;
+  }
+}

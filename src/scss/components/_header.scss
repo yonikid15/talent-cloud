@@ -1,0 +1,22 @@
+.header {
+  &__notification-bar {
+    @include default-theme-inverse;
+    @include flex;
+    @include flex-cross-center;
+    padding-left: 20px;
+    min-height: 40px;
+  
+    a {
+      padding: $paragraph-space;
+      color: $primary-inverse;
+    }
+
+    @include small() {
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+}
+
+
+

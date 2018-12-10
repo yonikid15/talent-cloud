@@ -1,0 +1,64 @@
+.featured-section {
+  @include flex;
+  @include flex-space-between;
+  @include background-inverse-default;
+  color: $secondary-inverse;
+
+  &__button {
+    width: 80px;
+    @include background-inverse-primary;
+    font-size: $baseline * 15;
+    border: 0;
+    @include flex;
+    @include flex-cross-center;
+    @include flex-center;
+  }
+
+  &__slide {
+    padding: $baseline * 20 $baseline * 40;
+  }
+
+  &__title {
+    margin-top: 0;
+    // text-align: center;
+  }
+
+  &__subtitle {
+    margin: 0;
+    // text-align: center;
+  }
+
+  &__content {
+    @include flex;
+    @include flex-center;
+    @include flex-cross-center;
+    div {
+      padding-left: $baseline * 10;
+    }
+  }
+
+  @include breakpoint( 1000px ) {
+    &__title {
+      text-align: center;
+    }
+
+    &__slide {
+      padding: $baseline * 10;
+    }
+
+    &__content {
+      @include flex-column;
+      div {
+        margin-top: $baseline * 10;
+        padding-left: 0;
+      }
+    }
+  }
+
+  @include breakpoint( 450px ) {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

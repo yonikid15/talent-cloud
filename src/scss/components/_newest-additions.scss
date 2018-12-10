@@ -1,0 +1,63 @@
+.newest-additions {
+  @include flex-column;
+  @include atXSmall;
+  @include atSmall;
+  @include atMedium;
+  @include atLarge;
+
+  &__header {
+    @include flex;
+    @include flex-space-between;
+    @include flex-cross-center;
+    margin-bottom: $baseline * 4;
+
+    @include small() {
+      @include flex-column;
+      @include flex-center;
+    }
+  }
+
+  &__title {
+    margin-left: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+  }
+
+  &__more {
+    color: $primary-inverse;
+  }
+
+  &__list {
+    @include flex;
+    @include flex-space-between;
+    @include flex-wrap;
+    @include breakpoint( 1270px ) {
+      @include flex-space-around;
+    }
+
+    li {
+      margin: $baseline * 4;
+    }
+
+    img {
+      margin-bottom: $baseline * 4;
+      @include small() {
+        margin-bottom: 0;
+      }
+    }
+
+    &-title {
+      padding-bottom: 0;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    &-director {
+      padding: 0;
+    }
+
+    &-starring {
+      padding: 0;
+    }
+  }
+}

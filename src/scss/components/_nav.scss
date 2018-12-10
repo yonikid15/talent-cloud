@@ -1,0 +1,64 @@
+.nav {
+  @include primary-theme-inverse;
+  @include flex;
+  @include flex-space-between;
+  @include flex-cross-center;
+  min-height: 100px;
+
+  &__menu {
+    @include flex;
+    @include flex-cross-center;
+    a {
+      margin: 0 $baseline * 4;
+      // text-decoration: none;
+      color: $primary;
+    }
+  }
+
+  &__logo {
+    @include flex;
+    @include flex-cross-center;
+    @include flex-center;
+    text-decoration: none;
+    color: $primary;
+    h1 {
+      margin: 0;
+      padding-bottom: 0;
+      margin-right: 20px;
+    }
+  }
+}
+
+.header .nav {
+  @include medium {
+    @include flex-column;
+    padding: $baseline * 10;
+    &__menu {
+      @include flex-column;
+      li {
+        margin: $baseline * 4;
+      }
+    }
+  }
+}
+
+.footer .nav {
+  @include medium {
+    @include flex-column;
+    &__menu {
+      @include flex-column;
+      li {
+        margin: $baseline * 4;
+      }
+    }
+
+    &__logo {
+      text-align: center;
+      h1 {
+        margin-top: $baseline * 5;
+        margin-right: 0;
+      }
+      
+    }
+  }
+}
