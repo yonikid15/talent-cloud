@@ -1,0 +1,35 @@
+#slider {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $default-inverse;
+  width: 100%;
+}
+
+.slide {
+  margin: auto;
+}
+
+.slick-list {
+  width: 100px;
+  flex: 2 0 auto;
+}
+
+.slick-arrow {
+  height: 100%;
+  width: 80px;
+  @include background-inverse-primary;
+  font-size: $baseline * 15;
+  border: 0;
+  @include flex;
+  @include flex-cross-center;
+  @include flex-center;
+
+  @include small {
+    width: 40px;
+    height: auto;
+  }
+}
+
+
+	

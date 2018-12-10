@@ -52,7 +52,8 @@
         </li>
         <li>
           <img src="https://via.placeholder.com/200x300" alt="media cover">
-          <h3 class="newest-additions__list-title">Movie Title</h3>
+          <h3 class="newest-additions__list-title">TV Show Title</h3>
+          <p class="newest-additions__list-director">Episode #12: Name</p>
           <p class="newest-additions__list-director">Director: Name</p>
           <p class="newest-additions__list-starring">Starring: Name, Name</p>
         </li>
@@ -70,7 +71,8 @@
         </li>
         <li>
           <img src="https://via.placeholder.com/200x300" alt="media cover">
-          <h3 class="newest-additions__list-title">Movie Title</h3>
+          <h3 class="newest-additions__list-title">TV Show Title</h3>
+          <p class="newest-additions__list-director">Episode #14: Name</p>
           <p class="newest-additions__list-director">Director: Name</p>
           <p class="newest-additions__list-starring">Starring: Name, Name</p>
         </li>
@@ -79,21 +81,43 @@
     
     <!-- Featured Content -->
     <section class="featured-section">
-      <button class="featured-section__button"><i class="fas fa-angle-left"></i></button>
-      <div class="slider">
-        <div class="featured-section__slide">
+      <!-- <button class="featured-section__button"><i class="fas fa-angle-left"></i></button> -->
+      <div id="slider">
+        <div class="slide featured-section__slide">
           <div class="featured-section__content">
             <img src="https://via.placeholder.com/250x250" alt="cover image">
             <div class="text-width">
               <h2 class="featured-section__title">Featured Content Title</h2>
               <h3 class="featured-section__subtitle">Series Title</h3>
               <p>Newest Episode: #34, Episode Title</p>
-              <p>Summary: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempora cumque. Corrupti eaque quaerat numquam excepturi consectetur inventore dolores. Dolore doloremque dolor necessitatibus nihil.</p>
+              <p>Summary: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempora cumque. Corrupti eaque quaerat numquam excepturi consectetur inventore dolores. Dolore doloremque dolor necessitatibus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide featured-section__slide">
+          <div class="featured-section__content">
+            <img src="https://via.placeholder.com/250x250" alt="cover image">
+            <div class="text-width">
+              <h2 class="featured-section__title">Featured Content Title</h2>
+              <h3 class="featured-section__subtitle">Series Title</h3>
+              <p>Newest Episode: #34, Episode Title</p>
+              <p>Summary: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempora cumque. Corrupti eaque quaerat numquam excepturi consectetur inventore dolores. Dolore doloremque dolor necessitatibus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="slide featured-section__slide">
+          <div class="featured-section__content">
+            <img src="https://via.placeholder.com/250x250" alt="cover image">
+            <div class="text-width">
+              <h2 class="featured-section__title">Featured Content Title</h2>
+              <h3 class="featured-section__subtitle">Series Title</h3>
+              <p>Newest Episode: #34, Episode Title</p>
+              <p>Summary: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores, tempora cumque. Corrupti eaque quaerat numquam excepturi consectetur inventore dolores. Dolore doloremque dolor necessitatibus.</p>
             </div>
           </div>
         </div>
       </div>
-      <button class="featured-section__button"><i class="fas fa-angle-right"></i></button>
+      <!-- <button class="featured-section__button"><i class="fas fa-angle-right"></i></button> -->
     </section>
 
     <!-- Contact Video Log -->
@@ -153,10 +177,19 @@
   crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript">
-  // $(document).ready(function(){
-  //   $('.slider').slick({
-      
-  //   });
-  // });
+  $(document).ready(function(){
+    $('#slider').slick({
+      prevArrow:
+        '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style=""><i class="fas fa-angle-left"></i></button>',
+      nextArrow:
+        '<button class="slick-next slick-arrow" aria-label="Previous" type="button" style=""><i class="fas fa-angle-right"></i></button>',
+      centerMode: false,
+      infinite: true,
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      slidesToShow: 1
+    });
+  });
 </script>
 </html>

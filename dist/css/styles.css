@@ -482,7 +482,7 @@ li {
         .newest-additions__list img {
           margin-bottom: 0; } }
     .newest-additions__list-title {
-      padding-bottom: 0;
+      padding-bottom: 1rem;
       font-weight: bold;
       margin-bottom: 0; }
     .newest-additions__list-director {
@@ -658,3 +658,31 @@ li {
       display: flex;
       flex-direction: column;
       justify-content: center; } }
+
+#slider {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #bbbbbb;
+  width: 100%; }
+
+.slide {
+  margin: auto; }
+
+.slick-list {
+  width: 100px;
+  flex: 2 0 auto; }
+
+.slick-arrow {
+  height: 100%;
+  width: 80px;
+  background-color: #616161;
+  font-size: 60px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 530px) {
+    .slick-arrow {
+      width: 40px;
+      height: auto; } }
